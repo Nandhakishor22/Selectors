@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: rgb(181, 238, 193);
+            }
+            table{
+                
+                width: 100px;
+                height: 200px;
+                text-align: unset;
+                margin-left: 100px;
+                background-color: white;
+                
+                box-shadow: 0 0 12px 2px;
+                
+            }
+            tr,td{
+                
+                cursor: pointer;
+                font-size: 20px;
+                
+                }
+            tr{
+                margin-left: 60px
+            }
+            td a { 
+                display: block;
+                }
+            td:hover{
+                background-color: lightgray;
+                
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            } 
+            *{
+                margin-left: 30px;
+            } 
+            .head{
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+            }
+            .head:hover{
+                display: ;
+            }
+            #def{
+                font-size: 25px;
+                font-family: 'Dosis', sans-serif;
+                font-weight: bold;
+            }
+            h2{
+                text-decoration: underline;
+            }
+            .note{
+                font-size: 20px;
+                text-decoration: underline;
+                color:red;
+            }
+            h3{
+                font-size: 25px;
+                text-decoration:underline;
+            }
+            p{
+                font-size: 20px;
+            }
+          .se1,#se1,div{
+              width: 80%;
+              height: 300px;
+              background-color: white;
+              box-shadow: 0 0 12px 2px gray;
+          }
+          .se1 h3{
+              border: 1px solid lightgray;
+              display: inline-block;
+              
+              
+          }
+               
+          
+            
+        </style>
+
+    </head>
+    <body>
+        <h1 class="head">Css Selectors</h1>
+        
+        <p id="def"> CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        
+        <h2>Types</h2>
+        <table>
+                <tr>
+                <td><a href="#uni"> Universal</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#class"> Class</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#id"> Id</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#elem1"> Element</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#elem2"> Element Class</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#elem3"> Element, Element</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#elem4"> Element>Element </a></td>
+                </tr>
+                <tr>
+                    <td><a href="#elem5"> Element+Element</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#attribute"> Attribute</a></td>
+                </tr>
+                
+
+            
+        </table>
+        <a name="uni"></a>
+        <div class="se1">
+        <h3>Universal selector</h3>
+        <p>The universal selector provided by CSS helps in choosing any elements within 
+            the HTML page. It goes with a single element and uses the asterisk (i.e., "*")
+             symbol used for denoting the selector as a universal selector. It is usually 
+             written as an asterisk followed by a selector.</p>
+             <p>Example:<br>The laeft margin for this page is assigned to all the elements using universal operator</p></div>
+        <a name="class"></a>
+        <div id="se1">
+        <h3>Class selector</h3>
+        <p>In CSS, a class selector is formatted as a period (.) character followed by
+             the name of the class. It selects all elements with that class attribute so 
+             that unique CSS declarations can be applied to those specific elements, without
+              affecting other elements on the page</p>
+        </div>
+        <a name="id"></a>
+        <div>
+        <h3>Id selector</h3>
+        <p>The id selector uses the id attribute of an HTML element to select a specific element.
+
+            The id of an element is unique within a page, so the id selector is used to select one unique element!
+            
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p></div>
+        <a name="elem1"></a>
+        <div>
+        <h3>Element selector</h3>
+        <p>The element selector selects all elements with the specified element name.</p></div>
+        <a name="elem2"></a>
+        <div>
+        <h3>Element Class selector</h3>
+        <p>
+            To select elements with a specific class, write a period (.) character, followed by 
+            the name of the class. You can also specify that only specific HTML elements should
+             be affected by a class. To do this, start with the element name, then write the period (.)</p>
+             <p>Example:<br><code>
+                p.intro {
+                    background-color: yellow;
+                  }</code></p></div>
+        <a name="elem3"></a>
+        <div>
+        <h3>Element, Element selector</h3>
+        <p>To style several elements with the same style, separate each element name with a comma.</p>
+        <p>Example:<br>
+        <code>
+            h1, p {
+                background-color: yellow;
+              }
+        </code></p></div>
+        <a name="elem4"></a>
+        <div>
+        <h3>Element>Element Selector</h3>
+        <p>The element>element selector is used to select elements with a specific parent.</p>
+        <p>Example:
+            <code>
+                div > p {
+                    background-color: yellow;
+                  }
+            </code>
+        </p></div>
+        <a name="elem5"></a>
+        <div>
+        <h3>Element+Element Selector</h3>
+        <p>The element+element selector is used to select an element that is directly after another specific element.</p>
+        <p>Example:
+            <code>
+                div > p {
+                    background-color: yellow;
+                  }
+            </code>
+        </p></div>
+        <a name="attribute"></a>
+        <div>
+        <h3>Attribute Selector</h3>
+        <p>The [attribute] selector is used to select elements with the specified attribute.</p>
+        <p>Example:<br>
+        <code>
+            [class=flower] {
+                border: 5px solid yellow;
+              }<br>
+            &nbsp;Input[type=text] {
+                font-size:30px;
+              }
+        </code></p></div>
+
+
+
+        
+    </body>
+</html>
